@@ -54,6 +54,7 @@ int main()
     Square s(5);
     Rectangle r(4, 6);
     Triangle t(3, 4, 5);
+    cout << "hello";
     s.area();
     r.area();
     t.area();
