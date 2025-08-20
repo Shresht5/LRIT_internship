@@ -10,7 +10,7 @@ protected:
     int side3;
 
 public:
-    Shape() {};
+    Shape() { cout << "this  is shape" << endl; };
     virtual void area() {};
 };
 class Square : public Shape
@@ -20,7 +20,7 @@ public:
     {
         side1 = s1;
     }
-    void area() override { cout << "area of square:" << side1 * side1 << endl; }
+    void area() override { cout << "area of square:" << side1 * side1 << endl; } // abstraction
 };
 class Rectangle : public Shape
 {
@@ -54,7 +54,6 @@ int main()
     Square s(5);
     Rectangle r(4, 6);
     Triangle t(3, 4, 5);
-    cout << "hello";
     s.area();
     r.area();
     t.area();
