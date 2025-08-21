@@ -54,6 +54,20 @@ public:
         cout << "area of triangle :" << area << endl;
     }
 };
+void home();
+int main()
+{
+    // Square s(5);
+    // Rectangle r(4, 6);
+    // Triangle t(3, 4, 5);
+
+    // s.area();
+    // r.area();
+    // t.area();
+
+    home();
+    return 0;
+}
 void home()
 {
     int choice;
@@ -96,17 +110,4 @@ void home()
     {
         exit(0);
     }
-}
-int main()
-{
-    // Square s(5);
-    // Rectangle r(4, 6);
-    // Triangle t(3, 4, 5);
-
-    // s.area();
-    // r.area();
-    // t.area();
-
-    home();
-    return 0;
 }

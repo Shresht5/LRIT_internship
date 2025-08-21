@@ -106,7 +106,7 @@ public:
     }
     void TeacherDetails()
     {
-        cout << "Id :" << getId() << "\nName :" << getName() << "\nDate Of Birth :" << getDOB() << "\nClass :" << mainClass << "\nSection :" << mainSection << "\nsubject :" << subject << endl;
+        cout << "Id :" << getId() << "\nName :" << getName() << "\nDate Of Birth :" << getDOB() << "\nManaging Class :" << mainClass << "\nManaging Section :" << mainSection << "\nsubject :" << subject << endl;
     }
 };
 void underline();
