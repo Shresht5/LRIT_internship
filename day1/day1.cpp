@@ -46,10 +46,10 @@ public:
     {
         fee = false;
     }
-    void setClassSection(int _Class, char _section)
+    void setClassSection(int Class, char section)
     {
-        Class = _Class;
-        section = _section;
+        ans = Class;
+        section = section;
     }
     int getClass()
     {

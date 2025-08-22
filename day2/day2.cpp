@@ -20,6 +20,7 @@ public:
     {
         side[0] = S1;
         side[1] = S2;
+
         side[2] = S3;
     };
     virtual void area() {};
