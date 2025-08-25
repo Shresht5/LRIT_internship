@@ -1,0 +1,71 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#backgroundImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("designerPhoto.jpg");
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#backgroundImage div {
+    color: white;
+    font-family: 'cursive';
+    text-align: center;
+}
+
+h1 {
+    font-size: 65px;
+    margin: 0px 0px 60px 0px;
+    filter: drop-shadow(5px 5px 10px #7b00ff);
+}
+
+p {
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    filter: drop-shadow(5px 5px 10px #00ffc3);
+}
+
+button {
+    margin-bottom: 50px;
+    padding: 8px;
+    font-size: 18px;
+    border: #7b00ff solid 0px;
+    border-radius: 5px;
+    color: #7b00ff;
+    filter: drop-shadow(5px 5px 10px #00d5ff);
+}
+
+#professions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #d0e2e9;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+#professions div {
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 50%;
+    margin: 10px auto;
+    flex-direction: column;
+}
+
+#professions div i {
+    font-size: 40px;
+}
+
+#professions div h2 {
+    display: inline;
+}

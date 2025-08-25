@@ -6,72 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="mypg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-    <nav>
-        <img id="mainLogo" src="images/logo.webp">
-        <div>
-            <a>Home</a>
-            <a>Contact</a>
-            <a>LogIn</a>
-            <a id="orangeButton">List of properties</a>
-        </div>
-    </nav>
-    <main>
-        <img src="images/HeroSection.webp">
-        <div>
-            <h2>Welcome to My PG</h2>
-            <h5>searching Best Accommodation for You</h5>
+    <header>
+        <nav>
+            <img id="mainLogo" src="images/logo.webp">
             <div>
-                <input placeholder="Select City">
-                <input placeholder="Select Property Type">
+                <a>Home</a>
+                <a>Contact</a>
+                <a>LogIn</a>
+                <a id="orangeButton">List Your Properties</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="mainSection">
+            <h2 style="font-size: 65px; color: white;">Welcome to My PG</h2>
+            <h5 style="font-size: 24px; color: white;">searching Best Accommodation for You</h5>
+            <div>
+                <select class="custom-select">
+                    <option selected disabled>Select City</option>
+                    <option>Maynaguri</option>
+                    <option>Jalpaiguri</option>
+                    <option>Siliguri</option>
+                    <option>Dhupguri</option>
+                    <option>Falakata</option>
+                    <option>Pundibari</option>
+                    <option>Coochbehar</option>
+                    <option>Kolkata</option>
+                    <option>Raiganj</option>
+                </select>
+                <select class="custom-select">
+                    <option selected disabled>Select Property Type</option>
+                    <option>PG</option>
+                    <option>Hostel</option>
+                    <option>Mess</option>
+                    <option>Dormitory</option>
+                    <option>Flat</option>
+                    <option>Room</option>
+                </select>
                 <button>Search</button>
             </div>
         </div>
-
     </main>
     <section>
-        <h3>Why My PG is the best property renting platform for you?</h3>
-        <div>
-            <img src="images/RentLogo.webp" alt="">
-            <h4>Ideal Rooms</h4>
-            <p>No need to visit the place. Book what you see as we promise you authentic listing and images on our
-                website. We understand the value of your time..</p>
-        </div>
-        <div>
-            <img src="images/XLogo.webp" alt="">
-            <h4>No Brokers</h4>
-            <p>My PG is completely broker-free. We don’t have any middlemen operating for us. You check out the listing
-                and book it online..</p>
-        </div>
-        <div>
-            <img src="images/Secure.webp" alt="">
-            <h4>Secure Payments</h4>
-            <p>We Promise you a 100% safe and secure network through our My PG Website. You have both Online & Offline
-                payment option here..</p>
-        </div>
-        <div>
-            <img src="images/moneyLogo.webp" alt="">
-            <h4>Refer & Earn</h4>
-            <p>Refer My PG property listing to your friends and family. The more you refer, the more you earn by
-                contacting us with proof..</p>
-        </div>
-        <div>
-            <img src="images/minPriceLogo.webp" alt="">
-            <h4>Minimum Price</h4>
-            <p>My PG offers you best accommodation with minimum cost with 24X7 support..</p>
+        <h3 style="font-size: 35px; text-align: center;">Why My PG is the best property renting platform for you?
+        </h3>
+        <div id="features">
+            <div>
+                <img src="images/RentLogo.webp" alt="">
+                <h4>Ideal Rooms</h4>
+                <p>No need to visit the place. Book what you see as we promise you authentic listing and images on our
+                    website. We understand the value of your time..</p>
+            </div>
+            <div>
+                <img src="images/XLogo.webp" alt="">
+                <h4>No Brokers</h4>
+                <p>My PG is completely broker-free. We don’t have any middlemen operating for us. You check out the
+                    listing and book it online..</p>
+            </div>
+            <div>
+                <img src="images/Secure.webp" alt="">
+                <h4>Secure Payments</h4>
+                <p>We Promise you a 100% safe and secure network through our My PG Website. You have both Online &
+                    Offline
+                    payment option here..</p>
+            </div>
+            <div>
+                <img src="images/moneyLogo.webp" alt="">
+                <h4>Refer & Earn</h4>
+                <p>Refer My PG property listing to your friends and family. The more you refer, the more you earn by
+                    contacting us with proof..</p>
+            </div>
+            <div>
+                <img src="images/minPriceLogo.webp" alt="">
+                <h4>Minimum Price</h4>
+                <p>My PG offers you best accommodation with minimum cost with 24X7 support..</p>
+            </div>
         </div>
     </section>
-    <section>
-        <h3>Are you a landlord looking for students?</h3>
-        <h5>List your property with the best property listing platform in India</h5>
-        <p>There are millions of students in India each year looking for accommodation. Are you looking to rent out your
+    <section id="About">
+        <h3 style="font-size: 45px;">Are you a landlord looking for students?</h3>
+        <h5 style="font-size: 26px;">List your property with the best property listing platform in India</h5>
+        <p style="font-size: 18px;">There are millions of students in India each year looking for accommodation. Are you
+            looking to rent out your
             property to students? Our students are looking. Time for you to get in touch with us!</p>
-        <button>List Your Property</button>
+        <button style="font-size: 22px;">List Your Property</button>
     </section>
     <footer>
-        <div>
+        <div id="footer">
             <div>
                 <h3>About</h3>
                 <ul>
@@ -95,21 +121,20 @@
             <div>
                 <h3>Contact Us</h3>
                 <ul>
-                    <li>Email:</li>
+                    <li style="font-size: 20px;">Email:</li>
                     <li>abc@gmail.com</li>
-                    <li>Phone:</li>
-                    <li>Phone:</li>
-                    <li>FAQ</li>
+                    <li style="font-size: 20px;">Phone:</li>
+                    <li>1234567890</li>
                 </ul>
             </div>
             <div>
                 <h3>Follow Us</h3>
-                <ul>
-                    <li>About Us</li>
-                    <li>How We Work</li>
-                    <li>Career</li>
-                    <li>Support</li>
-                </ul>
+                <div id="social">
+                    <a href="#"><i class="fa fa-facebook" style="padding: 10px 12px;"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
             </div>
         </div>
         <hr>

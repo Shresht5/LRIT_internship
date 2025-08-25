@@ -5,6 +5,15 @@ body {
     margin: 0px;
     padding: 0px;
     position: relative;
+    color: #233a52;
+    background-color: #f6f9fe;
+}
+
+header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav {
@@ -12,10 +21,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     font-size: 16px;
-    padding: 28px 0px;
+    padding: 24px 0px;
     max-width: 936px;
     margin: 0px auto;
-    position: sticky;
 }
 
 nav div {
@@ -53,19 +61,170 @@ nav div a:hover {
     color: white;
 }
 
-
 main {
     width: 100vw;
     height: 525px;
     position: relative;
+    opacity: 0.9;
+    background: url(/Assignment/images/HeroSection.webp) no-repeat center center/cover;
 }
 
 main img {
     width: 100vw;
     height: 525px;
     object-fit: cover;
-    position: absolute;
     opacity: 0.9;
+    position: absolute;
+    z-index: 0;
 }
 
-main div {}
+#mainSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+main div div {
+    border: 15px solid rgba(0, 0, 0, 0.6);
+}
+
+main div div select {
+    height: 40px;
+    width: 288px;
+}
+
+main div div button {
+    height: 40px;
+    width: 144px;
+    background-color: #233a52;
+    color: white;
+    border: 0px solid black;
+}
+
+section {
+    margin: 0px auto;
+    max-width: 936px;
+    padding: 76px 0px;
+}
+
+#features {
+    background-color: white;
+    font-size: 35px;
+    width: 100%;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#features div {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 10px 29px rgb(61 98 161 / 15%);
+    text-align: center;
+}
+
+#features div img {
+    height: 55px;
+    width: 55px;
+    margin-bottom: 8px;
+}
+
+#features div h4 {
+    font-size: 22px;
+    margin: 0px;
+}
+
+#features div p {
+    font-size: 15px;
+    text-align: center;
+}
+
+#About {
+    text-align: center;
+}
+
+#About h3 {
+    margin: 0px;
+}
+
+#About h5 {
+    margin: 10px 0px;
+}
+
+#About p {
+    margin: 0px;
+}
+
+#About button {
+    margin-top: 20px;
+    background-color: #ec3323;
+    border-radius: 40px;
+    color: white;
+    padding: 15px;
+    width: 330px;
+    border: 2px solid #e93f33;
+    cursor: pointer;
+}
+
+#About button:hover {
+    background: white;
+    color: #e93f33;
+}
+
+
+footer {
+    background-color: #233a52;
+    color: white;
+    font-size: 16px;
+}
+
+#footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 936px;
+    margin: 0px auto;
+}
+
+#footer div h3 {
+    font-size: 26px;
+    position: relative;
+}
+
+#footer div h3::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: #fff;
+    left: 0;
+    bottom: -10px;
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+footer p {
+    width: 616px;
+    text-align: center;
+    margin: 0px;
+    margin: 0px auto;
+}
+
+i {
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px 10px;
+}
