@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'raelway', sans-serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #fec003, #A50104);
+        }
+
+        #loginBox {
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            width: 320px;
+        }
+
+        #loginBox h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        div {
+            margin-bottom: 20px;
+        }
+
+        div label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        div input {
+            width: 320px;
+            padding: 10px;
+            border: 1px solid #a9a9a9;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        div input:focus {
+            border-color: #4a90e2;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #fec003;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ff9100;
+        }
+
+        #extraLinks {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        #extraLinks a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loginBox">
+        <h2>Login</h2>
+        <form>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <button type="submit">Login</button>
+            <div id="extraLinks">
+                <p><a href="#">Forgot Password?</a></p>
+                <p>Don't have an account? <a href="#">Sign Up</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
