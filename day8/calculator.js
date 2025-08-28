@@ -1,6 +1,5 @@
 function home() {
     while (true) {
-
         let firstnumber = Number(prompt("Enter First Number"));
         let operater = prompt("Enter Operator");
         let secondnumber = Number(prompt("Enter Second Number"));
@@ -27,7 +26,8 @@ function home() {
             default:
                 alert("please enter proper operator")
         }
-        alert(`Ans = ${answer}`);
+        console.log(`${firstnumber}${operater}${secondnumber}`)
+        console.log(`Ans = ${answer}`);
         const Exit = prompt("do you want to exit (Y/N)")
         if (Exit == "Y") { return; }
     }
