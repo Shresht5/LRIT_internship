@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            padding: 20px;
+            background-color: rgb(217, 242, 255);
+        }
+
+        h1 {
+            color: black;
+        }
+
+        h4 {
+            display: inline-block;
+        }
+
+        select {
+            width: 100px;
+            border: 1px solid red;
+            outline: none;
+            padding: 3px;
+            margin-bottom: 150px;
+        }
+
+        #productList {
+            display: flex;
+
+        }
+
+        .product {
+            margin-right: 5px;
+            padding: 20px;
+            display: inline-block;
+            border: 0px solid black;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 3px 3px 10px gray;
+        }
+
+        .product h3 {
+            color: blue;
+        }
+
+        .product p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Products</h1>
+    <label>
+        <h4>Sort:</h4>
+        <select id="selector">
+            <option>default</option>
+            <option>a-z</option>
+            <option>z-a</option>
+            <option>price asc</option>
+            <option>price desc</option>
+        </select>
+    </label>
+    <div id="productsList"></div>
+    <script src="product.js"></script>
+</body>
+
+</html>

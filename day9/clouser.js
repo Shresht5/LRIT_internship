@@ -8,3 +8,11 @@ const test = () => {
 
 }
 test();
+function name() {
+    return function data() {
+        console.log("xyz")
+    }
+}
+const fun = name();
+console.log(fun)
+fun();

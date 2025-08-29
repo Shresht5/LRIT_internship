@@ -5,6 +5,7 @@ const data1 = {
 const data2 = {
     Name: "Ron",
     Attendence: 23,
+    salary: () => { console.log(this.name) }
 }
 const data3 = {
     Name: "marry",
@@ -34,4 +35,4 @@ salary.call(data2, 900);
 salary.call(data3, 2000);
 salary.apply(data4, [1000]);
 const lastPersonSalary = salary.bind(data5, 700);
-lastPersonSalary();
+lastPersonSalary()
