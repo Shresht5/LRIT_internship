@@ -1,9 +1,11 @@
 import express from 'express'
 import cors from 'cors'
 import mongoose from 'mongoose'
+import dotenv from 'dotenv'
 
+dotenv.config()
 const app = express();
-const mongooseUrl = 'mongodb+srv://Shresht5:ola12345@projexts.6zfcpf7.mongodb.net/yetun?retryWrites=true&w=majority&appName=projexts';
+const mongooseUrl = process.env.MONGO_URL;
 
 (async function connectMongoose() {
     try {

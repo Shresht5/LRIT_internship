@@ -1,3 +1,5 @@
 *.exe
 .vscode
 Assignment/server/node_modules
+*package-lock.json
+*.env

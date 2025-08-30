@@ -5,7 +5,6 @@ const test = () => {
                 console.log(`status: ${data.status}, Method: ${data.method}`)
             })
         })
-
 }
 test();
 function name() {
