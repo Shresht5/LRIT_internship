@@ -10,6 +10,7 @@ document.getElementById("signform").addEventListener('submit', async (e) => {
         body: JSON.stringify({ email: email, password: password }),
     });
     const data = await res.json();
+    console.log(data);
     if (data.success) {
         alert('user created, go to login')
     }

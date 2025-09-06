@@ -68,7 +68,7 @@ app.use('/api', userRouter);
 
 //     }
 // })
-
+app.get("/", (req, res) => { res.send("hellos!") })
 app.get("/api", (req, res) => {
     res.status(200).json({ success: true, message: "!Hello World" })
 })
