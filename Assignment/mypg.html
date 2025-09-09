@@ -28,28 +28,21 @@
             <h2 style="font-size: 65px; color: white;">Welcome to Sunny Guest</h2>
             <h5 style="font-size: 24px; color: white;">searching Best Accommodation for You</h5>
             <div>
-                <select class="custom-select">
-                    <option selected disabled>Select City</option>
-                    <option>Maynaguri</option>
-                    <option>Jalpaiguri</option>
-                    <option>Siliguri</option>
-                    <option>Dhupguri</option>
-                    <option>Falakata</option>
-                    <option>Pundibari</option>
-                    <option>Coochbehar</option>
-                    <option>Kolkata</option>
-                    <option>Raiganj</option>
+                <select id="cityType1" class="custom-select">
+                    <option value="" selected disabled>Select City</option>
+                    <option value="Khujrao">Khujrao</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Gurgaun">Gurgaun</option>
                 </select>
-                <select class="custom-select">
-                    <option selected disabled>Select Property Type</option>
-                    <option>PG</option>
-                    <option>Hostel</option>
-                    <option>Mess</option>
-                    <option>Dormitory</option>
-                    <option>Flat</option>
-                    <option>Room</option>
+                <select id="propertyType1" class="custom-select">
+                    <option value="" selected disabled>Select Property Type</option>
+                    <option value="PG">PG</option>
+                    <option value="Hostel">Hostel</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Hotel">Hotel</option>
                 </select>
-                <button>Search</button>
+                <button id="search">Search</button>
             </div>
         </div>
     </main>
@@ -143,6 +136,7 @@
         <hr>
         <p>© 2025 Sunny Guest. All Rights Reserved.be happy ,stay happy, make happy.</p>
     </footer>
+    <script src="mypg.js"></script>
 </body>
 
 </html>

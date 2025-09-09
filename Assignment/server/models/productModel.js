@@ -5,7 +5,7 @@ const productSchema = new mongoose.Schema({
     city: { type: String, },
     type: { type: String, },
     discription: { type: String, },
-    bedroom: { type: Number, },
+    rooms: { type: Number, },
     bath: { type: String, },
     gen: { type: String, },
 }, { timestamps: true })
